@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Emtasks</a>
+  
 
-{{outlet}}
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="nav navbar-nav">
+      <li>{{#link-to "tasks"}}Home{{/link-to}}</li>
+      &emsp;
+      <li>{{#link-to "tasks.new"}}New Task{{/link-to}}</li>
+    </ul>
+  </div>
+</nav>
+<br>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			{{outlet}}
+    		</div>
+    	</div>
+
+    </div>
